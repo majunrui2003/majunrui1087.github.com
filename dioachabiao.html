@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>游戏调查表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 样式表 */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+			background-image: url('https://gd-hbimg.huaban.com/6d24269a8401cb6b65ff86b78a8452c51ab1d3b8e44ac-3X0jqC_fw1200webp');
+            background-color: #f4f4f4; /* 背景颜色设置为浅灰色 */
+            text-align: center; /* 将页面内容文字居中 */
+        }
+
+        header {
+            background: rgba(51, 51, 51, 0.8); /* 设置头部背景颜色为深灰色并带有透明度 */
+            color: #fff; /* 设置头部字体颜色为白色 */
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        section {
+            padding: 1rem;
+            margin: 1rem 0;
+            background: rgba(255, 255, 255, 0.8); /* 设置内容区域背景颜色为白色并带有透明度 */
+            border-radius: 10px; /* 设置内容区域圆角边框 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 设置内容区域阴影效果 */
+            text-align: left; /* 将内容区域文字左对齐 */
+            max-width: 600px;
+            margin: 2rem auto; /* 让内容居中显示 */
+			background-image: url('https://gd-hbimg.huaban.com/46f6e568a0656a020ce2d723a8d52aaf85365194c0b7-C1enyq_fw1200webp');
+        }
+
+        label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc; /* 设置输入框边框样式 */
+            border-radius: 5px; /* 设置输入框圆角边框 */
+            background: rgba(255, 255, 255, 0.8); /* 设置输入框背景颜色为白色并带有透明度 */
+        }
+
+        button {
+            padding: 0.7rem 1.5rem;
+            background: rgba(51, 51, 51, 0.8); /* 设置按钮背景颜色为深灰色并带有透明度 */
+            color: #fff; /* 设置按钮字体颜色为白色 */
+            border: none;
+            border-radius: 5px; /* 设置按钮圆角边框 */
+            cursor: pointer;
+        }
+		.button {
+        position: absolute; /* 绝对定位 */
+        top: 10px; /* 距离顶部 10px */
+        left: 10px; /* 距离左侧 10px */
+        padding: 10px 20px;
+        background-color: rgba(51, 51, 51, 0.8);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>游戏调查表</h1>
+    </header>
+
+    <section>
+        <!-- 用户信息部分 -->
+        <h2>用户信息</h2>
+        <form id="surveyForm">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">年龄：</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="gender">性别：</label>
+            <select id="gender" name="gender" required>
+                <option value="">请选择</option>
+                <option value="male">男</option>
+                <option value="female">女</option>
+                <option value="other">其他</option>
+            </select>
+
+            <!-- 游戏偏好部分 -->
+            <h2>游戏偏好</h2>
+            <label for="favGame">您最喜欢的游戏：</label>
+            <input type="text" id="favGame" name="favGame" required>
+
+            <label>您喜欢的游戏类型：</label>
+            <input type="checkbox" id="rpg" name="gameType" value="RPG">
+            <label for="rpg">角色扮演</label><br>
+            <input type="checkbox" id="fps" name="gameType" value="FPS">
+            <label for="fps">第一人称射击</label><br>
+            <input type="checkbox" id="strategy" name="gameType" value="Strategy">
+            <label for="strategy">策略</label><br>
+            <input type="checkbox" id="sports" name="gameType" value="Sports">
+            <label for="sports">体育</label><br>
+            <input type="checkbox" id="moba" name="gameType" value="MOBA">
+            <label for="moba">多人在线战术竞技</label><br>
+            <input type="checkbox" id="other" name="gameType" value="Other">
+            <label for="other">其他</label><br>
+
+            <!-- 游戏时间部分 -->
+            <label>您每天花多少时间在游戏上：</label>
+            <input type="radio" id="less1" name="gameTime" value="Less than 1 hour">
+            <label for="less1">少于1小时</label><br>
+            <input type="radio" id="1to3" name="gameTime" value="1 to 3 hours">
+            <label for="1to3">1到3小时</label><br>
+            <input type="radio" id="3to5" name="gameTime" value="3 to 5 hours">
+            <label for="3to5">3到5小时</label><br>
+            <input type="radio" id="more5" name="gameTime" value="More than 5 hours">
+            <label for="more5">超过5小时</label><br>
+
+            <!-- 建议意见部分 -->
+            <label for="comments">对我们平台的建议或意见：</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+
+            <center><button type="submit">提交</button></center>
+        </form>
+    </section>
+
+    <script>
+        // 阻止表单默认提交行为，显示感谢信息，并重置表单
+        document.getElementById('surveyForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('感谢您填写调查表！');
+            document.getElementById('surveyForm').reset();
+        });
+    </script>
+	<a href="index.html" class="button">返回</a>
+</body>
+</html>

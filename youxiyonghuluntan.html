@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>游戏用户论坛</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 样式表 */
+      /* 样式表 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;  /* 背景颜色设置为浅灰色 */
+    background-image: url('https://gd-hbimg.huaban.com/5e3c8f5a4324dddc12bc8b4e94c5ebe94cde08664b13c-h7K2Qg_fw1200webp'); /* 添加背景图片 */
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;  /* 将页面内容文字居中 */
+}
+
+header {
+    background: rgba(51, 51, 51, 0.8);  /* 设置头部背景颜色为深灰色并带有透明度 */
+    color: #fff;  /* 设置头部字体颜色为白色 */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.main-nav ul li a {
+    color: #fff;  /* 设置导航链接字体颜色为白色 */
+    text-decoration: none;
+}
+
+section {
+    padding: 1rem;
+    margin: 1rem 0;
+    background: rgba(255, 255, 255, 0.8);  /* 设置内容区域背景颜色为白色并带有透明度 */
+    border-radius: 10px;  /* 设置内容区域圆角边框 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* 设置内容区域阴影效果 */
+    text-align: center;  /* 将内容区域文字居中 */
+    background-image: url('https://gd-hbimg.huaban.com/65b32c7e3211953cd499e44bcb8167ca1b85652d27c50-k1m1Dl_fw1200webp');  /* 添加内容区域背景图片 */
+    background-size: cover;
+    color: purple; /* 设置文字颜色为紫色 */
+}
+
+.image-carousel {
+    display: flex;
+    overflow: hidden;
+    width: 300px;
+    margin: auto;
+}
+
+.image-carousel img {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;  /* 设置图片切换动画效果 */
+}
+
+.carousel-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-controls span {
+    cursor: pointer;
+    padding: 5px 10px;
+    background: rgba(51, 51, 51, 0.8);  /* 设置控制按钮背景颜色为深灰色并带有透明度 */
+    color: #fff;  /* 设置控制按钮字体颜色为白色 */
+    margin: 0 5px;
+    border-radius: 5px;  /* 设置控制按钮圆角边框 */
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;  /* 设置输入框边框样式 */
+    border-radius: 5px;  /* 设置输入框圆角边框 */
+    background: rgba(255, 255, 255, 0.8);  /* 设置输入框背景颜色为白色并带有透明度 */
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    background: rgba(51, 51, 51, 0.8);  /* 设置按钮背景颜色为深灰色并带有透明度 */
+    color: #fff;  /* 设置按钮字体颜色为白色 */
+    border: none;
+    border-radius: 5px;  /* 设置按钮圆角边框 */
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>游戏用户论坛</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="yonghuzhucedengluyemian.html">用户登录</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>欢迎来到游戏用户论坛</h2>
+            <p>与其他爱好者讨论最新的游戏和策略。</p>
+			<h3>最新帖子</h3>
+			<p>这是一个关于热门游戏的示例帖子。请在下方讨论您的策略！</p>
+        </section>
+
+      
+        <section id="suggestion">
+            <h2>用户帖子</h2>
+            <form id="suggestionForm">
+                <label for="userSuggestion">请在此处输入您的帖子内容：</label>
+                <textarea id="userSuggestion" name="userSuggestion" rows="4" cols="50"></textarea><br>
+                <button type="button" onclick="submitSuggestion()">发布帖子</button>
+            </form>
+        </section>
+    </main>
+
+  <script>
+        // 弹出提示的JavaScript代码
+        function showAlert() {
+            alert("按钮被点击了！");
+        }
+
+        // 提交建议的JavaScript代码
+        function submitSuggestion() {
+            const suggestion = document.getElementById('userSuggestion').value;
+            // 可以在这里将建议发送到后端进行处理
+            console.log('用户帖子：', suggestion);
+            alert('您的建议发布成功！');
+            // 清空输入框
+            document.getElementById('userSuggestion').value = '';
+        }
+    </script>
+</body>
+</html>

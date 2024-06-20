@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>游戏主页</title>
+  <style>
+    body {
+      background-image: url("https://gd-hbimg.huaban.com/4bf9ac9aa6230b02ab227c20c22b8390bce842c9551d3-uiLtjM_fw1200webp");
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      width: 100%;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      width: 100%;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .content {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+      width: 100%;
+    }
+
+    .slideshow {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60%; /* Adjust as needed */
+    }
+
+    .slideshow img {
+      display: none;
+      max-width: 100%;
+      max-height: 500px;
+    }
+
+    .slideshow img.active {
+      display: block;
+    }
+
+    .slideshow .prev,
+    .slideshow .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .slideshow .prev {
+      left: 20px;
+    }
+
+    .slideshow .next {
+      right: 20px;
+    }
+
+    .additional-images {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    .additional-images img {
+      width: 200px;
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .additional-images img:hover {
+      transform: scale(1.2); /* 添加放大效果 */
+    }
+
+    .side-images {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 20%;
+    }
+
+    .side-images img {
+      width: 100%;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease; /* 添加放大效果 */
+    }
+
+    .side-images img:hover {
+      transform: scale(1.2); /* 添加放大效果 */
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>游戏主页</h1>
+  </header>
+
+  <nav class="nav">
+    <a href="#">首页</a>
+    <a href="youxijieshao.html" target="_blank">游戏介绍</a>
+    <a href="youxiyonghuluntan.html">游戏用户论坛</a>
+    <a href="dioachabiao.html">游戏调查表</a>
+	<a href="yonghuzhucedengluyemian.html">用户登录界面</a>
+  </nav>
+
+  <div class="content">
+    <h2>欢迎来到游戏世界</h2>
+    <p>这里是一个充满创意和乐趣的游戏平台，在这里你可以看到任何充满乐趣的游戏</p>
+  </div>
+
+  <div class="gallery">
+    <div class="side-images">
+		<a href="youxijieshao.html">
+        <img src="tupian\349203DC46DC2C9BFB31676B0A0BB223.jpg" alt="跳转">
+		<img src="tupian\EAF07B4A490B8F058C8B902A82AAC8D7.jpg" alt="跳转">
+    </a>
+    </div>
+
+    <div class="slideshow">
+	  <a href="youxijieshao.html">
+      <img src="tupian\B829F31F555B0AA3D92E27B24B32CE97.jpg" alt="Image 1" class="active">
+      <img src="tupian\2E9AF2CFE9453898A89051DFBA66CE96.jpg" alt="Image 2">
+      <img src="tupian\60EA1D1B0A443143528FA1CAE8C5002E.jpg" alt="Image 3">
+        </a>
+      <a class="prev" onclick="changeSlide(-1)">❮</a>
+      <a class="next" onclick="changeSlide(1)">❯</a>
+    </div>
+
+    <div class="side-images">
+	   <a href="youxijieshao.html">
+      <img src="tupian\4303D82F9541C254C60BE72E42D5A16A.jpg" alt="Side Image 3">
+      <img src="tupian\A3D052464548FAE9B37D924F9D063B3B.jpg" alt="Side Image 4">
+	</a>
+    </div>
+  </div>
+
+  <div class="additional-images">
+	   <a href="youxijieshao.html">
+    <img src="tupian/C99A8DF9B5061EA925AEAA1986FE9EB8.jpg" alt="Additional Image 1">
+    <img src="tupian/4CDE3BA3E493DD5DE6B184E86519940E.jpg" alt="Additional Image 2">
+    <img src="tupian/B24B09524750BEB7494D9E147361FCD2.jpg" alt="Additional Image 3">
+    <img src="tupian/E352B86F9E342B2702F8E09F1A5B7D7C.jpg" alt="Additional Image 4">
+	<img src="tupian/249984A757A87920CA4602A6A2CF3A9C.jpg" alt="Additional Image 5">
+	<img src="tupian/C20745D7877B6179B65EB8E8C6DC64D6.jpg" alt="Additional Image 6">
+	<img src="tupian/4D4CACF1A341190BD4F69FEF6C4F8C0D.jpg" alt="Additional Image 7">
+    </a>
+  </div>
+	
+  <script>
+    let slideIndex = 1;
+    showSlide(slideIndex);
+
+    setInterval(() => {
+      changeSlide(1);
+    }, 3000);
+
+    function changeSlide(n) {
+      showSlide(slideIndex += n);
+    }
+
+    function showSlide(n) {
+      const slides = document.querySelectorAll('.slideshow img');
+
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove('active');
+      }
+
+      slides[slideIndex - 1].classList.add('active');
+    }
+  </script>
+</body>
+</html>

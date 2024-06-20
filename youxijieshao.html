@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>游戏介绍</title>
+<style>
+/* CSS 样式 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  /* 添加背景图片 */
+  background-image: url('https://gd-hbimg.huaban.com/bb6f255976a94cf28cf6006c11b5978eea508db3213f1c-RG3pBN_fw1200webp');
+  /* 替换为您的图片路径或URL */
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-color: #f0f0f0; 
+  position: relative; 
+}
+
+.game-intro {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative; 
+  z-index: 1; 
+}
+
+.game {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.game img {
+  float: left;
+  margin-right: 10px;
+  width: 25%;
+  height: auto;
+  transition: transform 0.3s; 
+}
+
+.game img:hover {
+  transform: scale(1.2); 
+}
+
+.game figcaption {
+  margin-left: 25%; 
+}
+
+/* 动图样式 */
+.gif-left {
+    position: absolute;
+    top: 594px;
+    left: 4px; 
+    transform: translateY(-50%);
+    width: 287px; 
+    height: auto;
+    z-index: 2;
+    transition: transform 0.3s; 
+}
+
+.gif-right {
+    position: absolute;
+    top: 153px;
+    right: 8px; /* 放置在最右侧 */
+    transform: translateY(-50%);
+    width: 281px; /* 占据右侧30%的宽度 */
+    height: auto;
+    z-index: 2; /* 确保动图位于游戏介绍之上 */
+    transition: transform 0.3s; /* 添加过渡效果 */
+}
+
+.gif-left:hover,
+.gif-right:hover {
+  transform: scale(1.2); /* 图片放大到120% */
+}
+  .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            position: fixed; /* 使用固定定位 */
+            top: 10px;
+            left: 10px;
+        }
+	
+</style>
+</head>
+<body>
+
+<section class="game-intro">
+  <center><h1>游戏介绍</h1></center>
+
+  <article class="game" onclick="toggleActive(this)">
+    <figure>
+		<a href="shipin\douyin2024618-619520.mp4" target="_self">
+      <img src="tupian\349203DC46DC2C9BFB31676B0A0BB223.jpg" alt="游戏1封面">
+		</a>
+      <figcaption><b>穿越火线:</b>CF正版第一人称射击手游
+《穿越火线：枪战王者》是腾讯游戏出品的CF
+正版第一人称射击手游，作为一款国民级竞技手游，游戏完美传承了PC端的品质和玩法，同时还针对手机端的操作特点，将3亿鼠标的枪战梦想
+延续到手机上，好玩的手感，让玩家随时随地体验极致射击乐趣和竞技对抗的热血，好玩就</figcaption>
+    </figure>
+  </article>
+	<article class="game" onclick="toggleActive(this)">
+    <figure>
+	  <a href="shipin\douyin2024618-555382.mp4" target="_self">
+      <img src="tupian\EAF07B4A490B8F058C8B902A82AAC8D7.jpg" alt="游戏1封面">
+	  </a>
+      <figcaption><b>QQ飞车:</b>QQ飞车是首款腾讯自主研发的竞速类休闲网络游戏，底层架构基于世界第一的物理引擎PhysX，游戏手感全面超越市场同类产品，全力为玩家打造逼真的驾驶体验；3D时尚人物造型、古朴潮流幻想的赛道主题、第三人称尾随视角，力求为玩家营造身历其境的感觉。</figcaption>
+    </figure>
+  </article>
+	<article class="game" onclick="toggleActive(this)">
+    <figure>
+		<a href="shipin\douyin2024619-141315.mp4" target="_self">
+      <img src="tupian\4303D82F9541C254C60BE72E42D5A16A.jpg" alt="游戏1封面">
+			 </a>
+      <figcaption><b>猫和老鼠:</b>龙宫大冒险，在龟丞相的盛情相邀下，杰瑞来到龙宫，在这里他将和一位神秘伙伴共同接受龙宫的考验，开启一段新的海底龙宫大冒险！
+收集金色竖琴，天使汤姆免费领
+*温柔英俊的天使汤姆华丽登陆猫鼠世界，参与天使汤姆活动，收集足够的金色竖琴，就能获得天使汤姆的青睐，解锁该角色！
+三周年专享，海量福利上线
+*在汤姆的梦想之国，选择你想前往的流程，美好梦想终会成真！在梦的终点，更有可爱俏皮的图茨·小桃仙等着你。周年庆期间参与活动，收集紫水玉，兑换心动奖励，全角色限免助你欢乐游戏！
+梦幻游园会，全新皮肤心动上线</figcaption>
+    </figure>
+  </article>
+	<article class="game" onclick="toggleActive(this)">
+    <figure>
+		<a href="shipin\douyin2024619-832548.mp4" target="_self">
+      <img src="tupian\A3D052464548FAE9B37D924F9D063B3B.jpg" alt="游戏1封面">
+			 </a>
+      <figcaption><b>第五人格:</b>第五人格是网易首款非对称性对抗竞技手游。玩家将扮演侦探奥尔菲斯，在收到一封神秘的委托信后，进入恶名昭著的庄园调查一件失踪案。
+在进行证据调查过程中，玩家扮演的奥尔菲斯将采用演绎法，对案情进行回顾。在案情回顾时，玩家可以选择扮演监管者或逃生者，展开激烈的对抗。而在调查的过程，无限接近真相时，却发现越来越恐怖的真相。</figcaption>
+    </figure>
+  </article>
+	<article class="game" onclick="toggleActive(this)">
+    <figure>
+		<a href="shipin\douyin2024619-780329.mp4" target="_self">
+      <img src="tupian\B829F31F555B0AA3D92E27B24B32CE97.jpg" alt="游戏1封面">
+			 </a>
+      <figcaption><b>西游：笔绘西行:</b>这是师徒几人修成正果后的新篇章；踏上西行路邂逅绮丽百态仙妖，结缘相伴，解开每位角色不为人知的前尘往事；运用谋略仙妖相克布列奇阵，寻找到破局之机！超百万字原创剧情，国漫番剧式动画，身临其境体验危机奇遇并存的西行之路，点击预约后西游题材国漫式手游《西游：笔绘西行》等你启程！【百万字原创剧情，洞见众生百态】前尘往事皆有因果，再历艰险尽显本心。超百万字的原创剧情，洞见众生百态。一路上经历的纷繁趣事与阴谋棋局，究竟是束缚于心的执念，还是勇往直前的坚持？仙妖人魔有何不同，真相是否尽如人意？【仙妖结缘相伴，策略阵容搭配】奇遇冒险中，邂逅性格迥异的仙妖人魔。不同角色专属技能设定，丰富的技能机制，独特的法宝装备，阵营职业相生相克，万千变化策略制胜。组成自己专属的西行小队，斗罢艰险再出发。【国漫级动画演绎，全语音剧情呈现】国漫级动画演绎、全语音剧情，带来沉浸式的交互体验。充满东方幻想的设计，再现宏大西游场景。逐帧动画，呈现顶尖战斗视效，给你颠覆式的西游新体验。【危机奇遇不断，多元趣味玩法】一路上虽然危机不断，但三界之大奇遇更多。重走西游路，还原经典西游。灵台方寸，欣赏四时美景。前尘玩法，探寻支线剧情。多元趣味玩法，也等待着大家的探索~</figcaption>
+    </figure>
+  </article>
+	<article class="game" onclick="toggleActive(this)">
+    <figure>
+		<a href="shipin\douyin2024619-113148.mp4" target="_self">-
+      <img src="tupian\2E9AF2CFE9453898A89051DFBA66CE96.jpg" alt="游戏1封面">
+			 </a>
+      <figcaption><b>三国杀:</b>三国杀作为一款原创桌上游戏，有别于其他桌面游戏的最主要特色，就是身份（势力、阵营）系统。身份场中共有4种身份：主公、反贼、忠臣、内奸。主公和忠臣的任务就是剿灭反贼，清除内奸；反贼的任务则是推翻主公。内奸则要在场上先清除除主公以外的其他人物（包括其他内奸），最后单挑主公。国战场共有4种势力：魏、蜀、吴、群和一种特殊身份：野心家。四种势力的任务是消灭其他势力的所有角色和所有野心家。活动场则最大限度的还原了历史上的三国战役，如：虎牢关，官渡之战等。</figcaption>
+    </figure>
+  </article>
+</section><article class="game" onclick="toggleActive(this)">
+    <figure>
+      <figcaption><b>显示更多......</b></figcaption>
+    </figure>
+  </article>
+<img src="tupian\6203a1582fc14de88ee21f8121c090bb-0.gif" alt="左侧动图" class="gif-left">
+
+<img src="tupian\dd084392c688433cbc642edf2992ceed-0.gif" alt="右侧动图" class="gif-right">
+
+<script>
+// JavaScript 代码
+function toggleActive(element) {
+  var games = document.getElementsByClassName('game');
+  for (var i = 0; i < games.length; i++) {
+    games[i].classList.remove('active');
+  }
+
+  element.classList.add('active');
+}
+</script>
+	<a href="index.html" class="button">返回</a>
+	
+</body>
+</html>
